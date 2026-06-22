@@ -1,0 +1,18 @@
+# ============================================================
+# AI Agent 学习项目 — 依赖清单
+# 安装: pip install -r requirements.txt
+# 更新: pip freeze > requirements.txt  (锁定所有传递依赖后执行)
+# ============================================================
+
+# --- LLM / API 调用 ---
+openai==1.55.0
+httpx==0.28.0
+
+# --- 数据校验与序列化 ---
+pydantic==2.10.0
+
+# --- 环境变量管理 ---
+python-dotenv==1.0.1
+
+# --- JSON Schema 生成 (pydantic 2.x 的依赖，显式锁定版本) ---
+pydantic-core==2.27.0
