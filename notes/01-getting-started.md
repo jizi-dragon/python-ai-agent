@@ -19,9 +19,30 @@ AI Agent（智能体）是一个能够感知环境、做出决策并执行行动
 | Memory | 记忆系统，存储上下文和历史 |
 | Planner | 规划器，分解任务并制定执行计划 |
 
-## 学习路线
+## 学习进度
 
-1. LLM 基础调用（API、本地模型）
+| 章节 | 内容 | 状态 |
+|------|------|------|
+| Chapter 1 | 极简 Agent 原型 → LLM 驱动 Agent | ✅ 完成 |
+
+### Chapter 1 学习路线
+
+```
+阶段一：手写规则原型 (agent_demo1.py)
+  ├── 用纯 Python 搭建 Agent 骨架
+  ├── 理解 Memory / LLM / Planner / Executor / Tools 五组件协作
+  └── 发现规则系统的天花板
+
+阶段二：接入真实 LLM (agent.py)
+  ├── 连通 DeepSeek API (agent_demo.py)
+  ├── 封装 AgentBrain：标准 OpenAI SDK 调用 (brain.py)
+  ├── 构建 AgentTools：搜索/计划/时间/计算 (tools.py)
+  └── 完整 Agent：LLM 思考 → 选择工具 → 调用工具 → 整合回复
+```
+
+## 后续学习路线
+
+1. ~~LLM 基础调用（API、本地模型）~~ ✅
 2. Function Calling / Tool Use
 3. ReAct 模式（Reasoning + Acting）
 4. Multi-Agent 协作
